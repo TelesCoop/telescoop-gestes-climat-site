@@ -265,8 +265,7 @@ export function getSubcategories(
 	engine: Engine,
 	sort: boolean
 ): Category[] {
-	const sumToDisplay =
-		category.name === 'logement' ? 'logement . impact' : category.name
+	const sumToDisplay = category.name
 
 	if (!sumToDisplay) return [category]
 
