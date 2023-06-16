@@ -244,7 +244,8 @@ export default ({ details, color, value, score, nextSlide }) => {
 						</div>
 					</>
 				)}
-				<div
+				{/* we are not comparing to the 2 tonnes */}
+				{/* <div
 					css={`
 						${barBorderStyle(color)}
 
@@ -260,7 +261,7 @@ export default ({ details, color, value, score, nextSlide }) => {
 					title={t("L'objectif à atteindre, 2 tonnes de CO₂e")}
 				>
 					{emoji('🎯')}
-				</div>
+				</div> */}
 			</div>
 
 			{!targetAchieved && (

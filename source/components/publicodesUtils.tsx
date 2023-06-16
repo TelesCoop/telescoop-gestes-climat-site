@@ -317,8 +317,10 @@ export function relegate(keys, array) {
 }
 
 export function relegateCommonCategories(array) {
-	const keys = ['services sociétaux']
-	return relegate(keys, array)
+	// const keys = ['services sociétaux']
+	// return relegate(keys, array)
+	// there are no common categories "services sociétaux"
+	return array
 }
 
 /** Like publicodes's encodeRuleName function but use '.' instead of '/' */
