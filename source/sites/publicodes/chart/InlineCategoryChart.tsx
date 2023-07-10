@@ -41,6 +41,7 @@ export default ({ givenEngine }) => {
 	const rules = useSelector((state: AppState) => state.rules)
 	const engine = givenEngine ?? useEngine()
 	const [categories, setCategories] = useState(mapAbreviation(rules, engine))
+	console.log("### categories", categories);
 	const tutorials = useSelector((state: AppState) => state.tutorials)
 
 	useEffect(() => {

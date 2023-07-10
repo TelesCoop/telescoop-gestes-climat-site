@@ -289,6 +289,8 @@ export function getSubcategories(
 			  }))
 			: subCategories
 
+	console.log("### category", category, "items", items)
+
 	return sort ? sortCategories(items) : items
 }
 
