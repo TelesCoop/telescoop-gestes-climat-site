@@ -82,7 +82,7 @@ export default function NumberedMosaic({
 							})}
 						</p>
 					) : chipsCount === chipsTotal ? (
-						<p role="alert">😋👍</p>
+						<p role="alert">Le compte est bon 👍</p>
 					) : (
 						<p
 							role="alert"
