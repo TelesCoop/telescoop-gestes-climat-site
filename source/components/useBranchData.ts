@@ -20,11 +20,18 @@ export default () => {
 		}
 	}, [searchPR, pullRequestNumber])
 
-	const deployURL = pullRequestNumber
-		? `https://deploy-preview-${pullRequestNumber}--ecolab-data.netlify.app`
-		: process.env.NODE_ENV === 'development'
-		? 'http://localhost:8081'
-		: 'https://data.nosgestesclimat.fr'
+	// let deployURL = pullRequestNumber
+	// 	? `https://deploy-preview-${pullRequestNumber}--ecolab-data.netlify.app`
+	// 	: process.env.NODE_ENV === 'development'
+	// 	? 'http://localhost:8081'
+	// 	: 'https://data.nosgestesclimat.fr'
+
+	let deployURL = 'http://localhost:8000'
+	if (process.env.NODE_ENV !== 'development') {
+		deployURL = '/'
+	}
+
+	console.log(" ###deployUrl", deployURL)
 
 	// rules are loaded from data.nosgestesclimat.fr since 26th february 2023, but PR cannot
 

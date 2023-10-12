@@ -9,7 +9,6 @@ import uiEn from '!locale-yaml-loader!./ui/ui-en-us.yaml'
 import uiFr from '!locale-yaml-loader!./ui/ui-fr.yaml'
 // import uiIt from '!locale-yaml-loader!./ui/ui-it.yaml'
 
-import faqEn from '!locale-yaml-loader!./faq/FAQ-en-us.yaml'
 // import faqEs from '!locale-yaml-loader!./faq/FAQ-es.yaml'
 import faqFr from '!locale-yaml-loader!./faq/FAQ-fr.yaml'
 // import faqIt from '!locale-yaml-loader!./faq/FAQ-it.yaml'
@@ -46,16 +45,16 @@ export const defaultLang = Lang.Fr
 
 export function getLangInfos(lang: Lang): LangInfos {
 	switch (lang) {
-		case Lang.En: {
-			return {
-				name: 'English',
-				abrv: 'en',
-				abrvLocale: 'en-US',
-				faqContent: faqEn,
-				releases: releasesEn,
-				uiTrad: uiEn.entries,
-			}
-		}
+		// case Lang.En: {
+		// 	return {
+		// 		name: 'English',
+		// 		abrv: 'en',
+		// 		abrvLocale: 'en-US',
+		// 		faqContent: faqEn,
+		// 		releases: releasesEn,
+		// 		uiTrad: uiEn.entries,
+		// 	}
+		// }
 		// case Lang.Es: {
 		// 	return {
 		// 		name: 'Español',
