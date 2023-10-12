@@ -28,7 +28,7 @@ export default () => {
 
 	let deployURL = 'http://localhost:8000'
 	if (process.env.NODE_ENV !== 'development') {
-		deployURL = '/'
+		deployURL = ''
 	}
 
 	console.log(" ###deployUrl", deployURL)
