@@ -23,7 +23,7 @@ export default ({}) => {
 
 	const flatActions = rules['actions']
 
-	const objectifs = ['bilan', ...flatActions.formule.somme]
+	const objectifs = ['bilan', ...(flatActions && flatActions.formule.somme || [])]
 
 	const engine = useContext(EngineContext)
 

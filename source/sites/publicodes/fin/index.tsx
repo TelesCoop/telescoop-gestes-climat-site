@@ -60,7 +60,8 @@ export default ({}) => {
 		bilan: Budget,
 		categories: Catégories,
 		action: ActionSlide,
-		petrogaz: Petrogaz,
+		// petrol and gaz view is deactivated
+		// petrogaz: Petrogaz,
 	}
 	const componentCorrespondence = enquête
 		? { ...componentCorrespondenceBasis, enquete: EnqueteReminder }

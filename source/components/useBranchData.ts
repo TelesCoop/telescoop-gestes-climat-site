@@ -26,10 +26,10 @@ export default () => {
 	// 	? 'http://localhost:8081'
 	// 	: 'https://data.nosgestesclimat.fr'
 
-	let deployURL = 'http://localhost:8000'
-	if (process.env.NODE_ENV !== 'development') {
-		deployURL = ''
-	}
+	const deployURL = ''
+	// if (process.env.NODE_ENV !== 'development') {
+	// 	deployURL = ''
+	// }
 
 	console.log(" ###deployUrl", deployURL)
 
